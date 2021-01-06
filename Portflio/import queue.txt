@@ -1,0 +1,173 @@
+import queue 
+  
+# A node of BFS traversal  
+class node: 
+    def __init__(self, val, level): 
+        self.val = val  
+        self.level = level 
+  
+# Returns minimum number of operations  
+# needed to convert x into y using BFS  
+def minOperations(x, y): 
+      
+    # To keep track of visited numbers  
+    # in BFS.  
+    visit = set()  
+  
+    # Create a queue and enqueue x into it.  
+    q = queue.Queue() 
+    n = node(x, 0)  
+    q.put(n)  
+  
+    # Do BFS starting from x  
+    while (not q.empty()): 
+          
+        # Remove an item from queue  
+        t = q.get()  
+  
+        # If the removed item is target  
+        # number y, return its level  
+        if (t.val == y): 
+            return t.level  
+  
+        # Mark dequeued number as visited  
+        visit.add(t.val)  
+  
+        # If we can reach y in one more step  
+        if (t.val * 2 == y or t.val - 1 == y):  
+            return t.level+1
+  
+        # Insert children of t if not visited  
+        # already  
+        if (t.val * 2 not in visit): 
+            n.val = t.val * 2
+            n.level = t.level + 1
+            q.put(n) 
+        if (t.val - 1 >= 0 and t.val - 1 not in visit): 
+            n.val = t.val - 1
+            n.level = t.level + 1
+            q.put(n) 
+  
+# Driver code  
+if __name__ == '__main__': 
+  
+    x = 4
+    y = 7
+    print(minOperations(x, y)) 
+  
+# This code is contributed by PranchalK 
+
+Output :
+2
+This article is contributed by Vipin Khushu. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above
+
+Attention reader! Don’t stop learning now. Get hold of all the important DSA concepts with the DSA Self Paced Course at a student-friendly price and become industry ready.
+
+
+
+
+
+Recommended Posts:
+Minimum number of given operations required to convert a permutation into an identity permutation
+Minimum steps required to convert X to Y where a binary matrix represents the possible conversions
+Min steps to convert N-digit prime number into another by replacing a digit in each step
+Convert the undirected graph into directed graph such that there is no path of length greater than 1
+Convert Directed Graph into a Tree
+Minimum number of swaps required to sort an array
+Minimum number of given operations required to make two strings equal
+Minimum number of pairs required to make two strings same
+Minimum number of colors required to color a graph
+Minimum time required to rot all oranges
+Minimum edges required to add to make Euler Circuit
+Minimum steps required to reach the end of a matrix | Set 2
+Minimum colors required such that edges forming cycle do not have same color
+Minimum time required to fill the entire matrix with 1's
+Minimum edges required to make a Directed Graph Strongly Connected
+Minimize cost to color all the vertices of an Undirected Graph using given operation
+Minimum clicks to convert string X to Y
+Minimize the number of steps required to reach the end of the array | Set 2
+Check if a Tree can be split into K equal connected components
+Convert Adjacency Matrix to Adjacency List representation of Graph
+
+Improved By : popularhat, PranchalKatiyar, nidhi_biet
+
+Article Tags : 
+Graph
+BFS
+Practice Tags : 
+Graph
+BFS
+
+thumb_up
+17
+
+
+ 
+2.6
+
+Based on 21 vote(s)
+Improve Article  
+Please write to us at contribute@geeksforgeeks.org to report any issue with the above content.
+Post navigation
+Previous
+first_page Minimum edges to reverse to make path from a source to a destination
+Next
+last_pageMinimum number of swaps required to sort an array
+
+
+
+
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+auto
+
+Most popular in Graph
+Bridges in a graph
+Shortest path in an unweighted graph
+Connected Components in an undirected graph
+Articulation Points (or Cut Vertices) in a Graph
+Print all paths from a given source to a destination
+
+
+More related articles in Graph
+Ford-Fulkerson Algorithm for Maximum Flow Problem
+Iterative Deepening Search(IDS) or Iterative Deepening Depth First Search(IDDFS)
+Find if there is a path between two vertices in a directed graph
+Traveling Salesman Problem (TSP) Implementation
+Uniform-Cost Search (Dijkstra for large Graphs)
+
+
+GeeksforGeeks
+room
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+email
+feedback@geeksforgeeks.org
+Company
+About Us
+Careers
+Privacy Policy
+Contact Us
+Learn
+Algorithms
+Data Structures
+Languages
+CS Subjects
+Video Tutorials
+Practice
+Courses
+Company-wise
+Topic-wise
+How to begin?
+Contribute
+Write an Article
+Write Interview Experience
+Internships
+Videos
+@geeksforgeeks , Some rights reserved
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood 

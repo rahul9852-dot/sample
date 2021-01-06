@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Rahul Kumar</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Data Scientist</p>
+            <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Software Developer + Web Development</h3>
+                    <p>As a Software developer, I can design various types of App and Software using my proficient programming language Python,Data Structure and Algorithms. Apart from that, I have also some experience in various types of  Software life-cycle models like Waterfall, Prototype , spiral and Agile model, etc. I am also aware of the various steps involved in the development of software. 
+                        As a Web developer, I have advance knowledge in HTML and CSS and the basics of Flask for building fronted applications such as designing user-interface, Website, etc. These are the thing which I can do as a software developer and web developer.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Machine Learning and Deep Learning</h3>
+                    <p>From Machine learning, we know as human we learn from our Experiences and Machine Learn from data. As M.L Engineer I have worked on both Structured and Unstructured data find meaningful information from their respective Prediction or analysing. I can work On both Supervised and Unsupervised learning algorithms like Linear Regression , Multiple Linear Regression, Logistic Regression , K-Nearest Neighbour, etc. I can implement all these algorithms in real-world use cases. There is various type of model evaluation technique s where I can work frequently. 
+						Apart from Deep learning, I can build a basic neural network model and aware of all math intuition which is used in deep learning.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Data Science</h3>
+                    <p>As Data scientist, we know that data science is a multidisciplinary subject which includes lots of process and method which apply on both structured and unstructured data to draw meaningful information from them. As far as my concern I can perform data analysis to gain meaningful information from them. I can also perform Data visualization technique to understand the data and draw various inferences from them. Instead of that, involved various statistical approach to draw an effective conclusion from data. I have implemented various data science technique on real-world uses cases to make ourself effective in a data science discipline.
+                        I have also done two Capstone project on real-world data.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Software Developer & Data Scientist</p>
+           
+           <div class="about-me__body">
+               <p>An independent, self-motivated, and dedicated student.With the proven ability and having experienced in developing a web application using HTML, CSS, and Data Science with Data structure and Algorithms. I have also participated in a lot of competitive programming and Data Science Hackathons such as Kaggle, Analytic Vidya and HackerRank, etc. Recognized by my Professors, peers, and Colleagues as a personable consistent, and dedicated performer who demonstrates innovation, communication, teamwork to ensure quality, timely Project Completion.</p>
+               <p>perform debugging and testing in programming to solve a complex problem. 
+                Measure the complexity and perform various approaches to solve typical data structure and algorithm problem.
+                Expertise in writing SQL queries.
+                Involved in data preprocessing techniques to make data useful for creating a Model.
+                Explore different data visualization processes and methods to understand data and draw meaning information from them.
+                Capable of solving lots of data science use-cases through statistical methods.
+                Involved in solving lots of regression and Classification problems using the sklearn package such as Linear, logistic Naive Baye's, decision tree, and SVM , KNN, etc..
+                Also involved in various types of model deployment techniques to improve our model performance and accuracy.
+                Also cable for the deployment of Machine or deep Learning in a cloud platform like GCP, HEROKU, AWS.
+                Reliable in Combing all data science techniques to make the Problem more prominent for better Performance in the real -world.
+                
+                </p>
+           </div>
+           
+           <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/titanic.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item2.html" class="portfolio__item">
+                    <img src="img/foursquare.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/cat.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 0 0-->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">kumarrahul31199@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
